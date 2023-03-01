@@ -127,6 +127,7 @@ html{
     font-weight: 600;
     margin-left: -10px;
     margin-top: -2%;
+    /* -webkit-text-stroke: 0.5px black; */
 }
 .home .home-content .text-3{
     font-size: 40px;
@@ -199,7 +200,7 @@ section .title::after{
 }
 /* about section styling */
 section{
-    padding: 10px 0;
+    padding: 100px 0;
 }
 /* .about .title::after{
     content: "who i am";
@@ -646,6 +647,91 @@ section{
     width: 50%;
   }
 
+  /* slider-carol start*/
+  .slides{
+    width: 100%;
+    position: relative;
+  }
+  
+  .slides .slide{
+    display: none;
+  }
+  
+  .slides .slide img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  .slides .navigation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .slides .navigation .prev, .slides .navigation .next{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    transition: 0.6s ease;
+  }
+  
+  .slides .navigation .prev:hover, .slides .navigation .next:hover{
+    background: rgba(0,0,0,1);
+  }
+
+  .cap-text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  @keyframes fade {
+    from{opacity: 0.3}
+    to {opacity: 1}
+  }
+  
+  @media (max-width: 992px){
+    .slides .navigation .prev, .slides .navigation .next{
+      font-size: 18px;
+      padding: 13px;
+    }
+  }
+  
+  @media (max-width: 768px){
+    .slides .navigation .prev, .slides .navigation .next{
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 576px){
+    .slides .navigation .prev, .slides .navigation .next{
+      font-size: 12px;
+      padding: 7px;
+    }
+  }
+  
+  @media (max-width: 360px){
+    .slides .navigation .prev, .slides .navigation .next{
+      font-size: 11px;
+      padding: 6px;
+    }
+  }
+  
+  /* slider-carol end*/
 
   @media only screen and (max-width: 700px) {
     .responsive {

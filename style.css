@@ -330,6 +330,8 @@ section{
 /* .skills .title::after{
     content: "what i know";
 } */
+
+
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -507,6 +509,10 @@ section{
 }
 .contact .contact-content .right .fa-github{
     color: #171515
+}
+
+section .positioning{
+    padding-top: 100% !important;
 }
 
 /* footer section styling */
