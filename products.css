@@ -70,6 +70,21 @@ html{
     color: white;
 }
 
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  /* backdrop-filter: blur(10px); */
+}
+nav ul li a{
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
 /* menu btn styling */
 .menu-btn{
     color: white;
@@ -104,7 +119,7 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    background: url("./foto/troi2.jpg") no-repeat center;
+    background: url("./foto/troi11.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -127,7 +142,7 @@ html{
     font-weight: 600;
     margin-left: -10px;
     margin-top: -2%;
-    /* -webkit-text-stroke: 0.5px black; */
+    text-shadow: 1px 1px black;
 }
 .home .home-content .text-3{
     font-size: 40px;
@@ -689,20 +704,21 @@ section{
   }
 
   .cap-text{
-    color: #f2f2f2;
+    color: black;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
+    backdrop-filter: blur(10px);
   }
   
   @keyframes fade {
     from{opacity: 0.3}
     to {opacity: 1}
   }
-  
+
   @media (max-width: 992px){
     .slides .navigation .prev, .slides .navigation .next{
       font-size: 18px;
@@ -715,6 +731,9 @@ section{
       font-size: 15px;
       padding: 10px;
     }
+    .slides{
+        width: 100%;
+      }
   }
   
   @media (max-width: 576px){
