@@ -711,7 +711,7 @@ section{
     bottom: 8px;
     width: 100%;
     text-align: center;
-    backdrop-filter: blur(10px);
+    background-color: white;
   }
   
   @keyframes fade {
