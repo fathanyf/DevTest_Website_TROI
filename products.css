@@ -215,7 +215,7 @@ section .title::after{
 }
 /* about section styling */
 section{
-    padding: 100px ;
+    padding: 100px 0;
 }
 /* .about .title::after{
     content: "who i am";
