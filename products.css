@@ -215,7 +215,7 @@ section .title::after{
 }
 /* about section styling */
 section{
-    padding: 100px 0;
+    padding: 100px ;
 }
 /* .about .title::after{
     content: "who i am";
@@ -754,6 +754,12 @@ section{
     .slides{
         width: 100%;
       }
+      section{
+        padding: 90px 0;
+    }
+    section .event-sec{
+        padding: 10px ;
+    }
   }
   
   @media (max-width: 576px){
@@ -771,11 +777,18 @@ section{
   }
 
   /* table */
+.text-table{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: -20%;
+}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
   border: 2px solid black;
+  padding-top: 1%;
 }
 
 td, th {
@@ -794,6 +807,12 @@ tr:nth-child(even) {
     .responsive {
       width: 49.99999%;
       margin: 6px 0;
+    }
+    .text-table{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 0%;
     }
   }
   
