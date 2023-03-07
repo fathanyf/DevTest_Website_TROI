@@ -676,7 +676,8 @@ section{
   .grid-item figcaption {
     display: block;
     padding: .625rem .5rem;
-    background: #474952;
+    /* background: #474952; */
+    color: #111;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
