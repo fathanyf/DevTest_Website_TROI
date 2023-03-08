@@ -116,8 +116,8 @@ nav ul li a{
 /* home section styling */
 .home{
     display: flex;
-    background: url("./foto/troi10.JPG") no-repeat center;
-    height: 110vh;
+    background: url("./foto/troi12.JPG") no-repeat center;
+    height: 90vh;
     color: #fff;
     min-height: 500px;
     background-size: cover;
@@ -136,12 +136,18 @@ nav ul li a{
     /* background-color: #111; */
     backdrop-filter: blur(75px);
     padding: 2px;
+    border-right: -10%;
+    
+}
+.home .home-content .text-1 ul{
+    list-style: none;
 }
 .home .home-content .text-2{
-    font-size: 90px;
+    font-size: 70px;
     font-weight: 600;
     margin-left: -10px;
     margin-top: -2%;
+    padding-bottom: 2%;
     text-shadow: 1px 2px 4px black;
 }
 .home .home-content .text-3{
@@ -791,3 +797,4 @@ footer span a:hover{
         font-size: 27px;
     }
 }
+
