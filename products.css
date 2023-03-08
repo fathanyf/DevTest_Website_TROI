@@ -961,3 +961,49 @@ footer span a:hover{
         font-size: 27px;
     }
 }
+
+/* .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  } */
+  
+  /* .icon-bar a:hover {
+    background-color: #000;
+  }
+    .fa-instagram {
+    background: #125688;
+    color: white;
+  } */
+  .instagram-button {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: #C13584;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .instagram-button:hover {
+    transform: scale(1.1);
+  }
+  
