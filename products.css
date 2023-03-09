@@ -788,19 +788,19 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  /* border: 2px solid black; */
+  border: 2px solid black;
   /* padding-top: 1%; */
 }
 
 td, th {
-  /* border: 2px solid black; */
+  border: 2px solid black;
   text-align: left;
   padding: 8px;
 }
 
-/* tr:nth-child(even) {
+tr:nth-child(even) {
   background-color: #dddddd;
-} */
+}
   
   /* slider-carol end*/
 

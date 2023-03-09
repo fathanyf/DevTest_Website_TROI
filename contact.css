@@ -134,7 +134,8 @@ nav ul li a{
 .home .home-content .text-1{
     font-size: 27px;
     /* background-color: #111; */
-    backdrop-filter: blur(75px);
+    /* backdrop-filter: blur(75px); */
+    backdrop-filter: contrast(10%);
     padding: 2px;
 }
 .home .home-content .text-2{
