@@ -705,15 +705,23 @@ text-align: center;
 }
 .logo1{
 grid-area: logo1;
+width: 200px;
+margin-left: 20%;
 }
 .logo2{
     grid-area: logo2;
+    width: 200px;
+    margin-left: -100%;
 }
 .nama1{
     grid-area: nama1;
+    width: 200px;
+    margin-left: 20%;  
 }
 .nama2{
     grid-area: nama2;
+    width: 200px;
+    margin-left: -100%;
 }
 @media (max-width: 800px) {
     .container-support{
@@ -733,13 +741,20 @@ grid-area: logo1;
     .support-content span{
         margin-right:55%;
     }
+    .logo1{
+        width: 100px;
+        margin-left: 10%;
+    }
     .logo2{
         padding-top: 5%;
+        margin-left: 10%;    
     }
     .nama1{
         padding-top: 5%;
+        margin-left: 10%;
     }
     .nama2{
         padding-top: 5%;
-    }
+        margin-left: 10%;    
+}
 }
