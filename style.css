@@ -733,7 +733,13 @@ grid-area: logo1;
     .support-content span{
         margin-right:55%;
     }
-    .support-content b{
-        
+    .logo2{
+        padding-top: 5%;
+    }
+    .nama1{
+        padding-top: 5%;
+    }
+    .nama2{
+        padding-top: 5%;
     }
 }
