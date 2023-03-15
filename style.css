@@ -758,3 +758,93 @@ margin-left: 20%;
         margin-left: 10%;    
 }
 }
+
+.struktur-content{
+    display: grid;
+    grid-template-areas: "fotoketua fotosekertaris fotobendahara"
+                          "namaketua namasekertaris namabendahara";
+    grid-template-rows:    1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.struktur-content img{
+    height: 200px;
+    width: 200px;
+    /* object-fit: contain; */
+    border-radius: 6px;
+    border: 1.5px solid black;
+}
+.fotoketua{
+    grid-area: fotoketua;
+    width: 200px;
+}
+.fotosekertaris{
+    grid-area: fotosekertaris;
+    width: 200px;
+    margin-left: -125%;
+}
+.fotobendahara{
+    grid-area: fotobendahara;
+    width: 200px;
+}
+.namaketua{
+    grid-area: namaketua;
+    width: 200px;
+}
+.namasekertaris{
+    grid-area: namasekertaris;
+    width: 200px;
+    margin-left: -125%;
+}
+.namabendahara{
+    grid-area: namabendahara;
+    width: 200px;
+}
+
+@media (max-width: 800px) {
+    .struktur-content{
+        display: grid;
+        grid-template-areas: "fotoketua"
+                            "namaketua"
+                            "fotosekertaris"
+                            "namasekertaris"
+                            "fotobendahara"
+                            "namabendahara";
+        grid-template-rows:    1fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .fotoketua{
+        grid-area: fotoketua;
+        width: 200px;
+        margin-left: 25%;
+    }
+    .fotosekertaris{
+        grid-area: fotosekertaris;
+        width: 200px;
+        margin-top: 10%;
+        margin-left: 25%;
+    }
+    .fotobendahara{
+        grid-area: fotobendahara;
+        width: 200px;
+        margin-left: 25%;
+        margin-top: 8%;
+    }
+    .namaketua{
+        grid-area: namaketua;
+        width: 200px;
+        margin-left: 25%;
+    }
+    .namasekertaris{
+        grid-area: namasekertaris;
+        width: 200px;
+        margin-top: 1%;
+        margin-left: 25%;
+    }
+    .namabendahara{
+        grid-area: namabendahara;
+        width: 200px;
+        margin-left: 25%;
+    }
+}
