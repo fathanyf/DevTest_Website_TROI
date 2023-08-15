@@ -688,15 +688,18 @@ footer span a:hover{
 }
 .container-support{
 display: grid;
-grid-template-areas:"logo1 logo2"
-                    "nama1 nama2";
-grid-template-rows:    1fr;
+grid-template-areas:"logo1 logo2 logo3 logo4 logo5"
+                    "nama1 nama2 nama3 nama4 nama5";
+grid-template-rows:    0.5fr;
 grid-template-columns: 1fr;
 text-align: center;
 }
+.container-support b{
+    font-size: 12px;
+}
 .container-support img{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     object-fit: contain;
     /* border-radius: 6px; */
     /* margin-top: 10%;
@@ -705,23 +708,64 @@ text-align: center;
 }
 .logo1{
 grid-area: logo1;
-width: 200px;
-margin-left: 20%;
+width: 100px;
+margin-left: 10%;
 }
 .logo2{
     grid-area: logo2;
     width: 200px;
-    margin-left: -100%;
+    margin-left: 20%;
+}
+.logo3{
+    grid-area: logo3;
+    width: 200px;
+    margin-left: 20%;
+}
+.logo4{
+    grid-area: logo4;
+    width: 200px;
+    margin-left: -0%;
+}
+.logo5{
+    grid-area: logo5;
+    width: 200px;
+    margin-left: -10%;
+}
+.logo6{
+    grid-area: logo6;
+    width: 200px;
+    margin-left: -10%;
+    margin-top: -50%;
 }
 .nama1{
     grid-area: nama1;
     width: 200px;
-    margin-left: 20%;  
+    margin-left: -10%;
 }
 .nama2{
     grid-area: nama2;
     width: 200px;
-    margin-left: -100%;
+    margin-left: -40%;
+}
+.nama3{
+    grid-area: nama3;
+    width: 200px;
+    margin-left: -25%;
+}
+.nama4{
+    grid-area: nama4;
+    width: 200px;
+    margin-left: -10%;
+}
+.nama5{
+    grid-area: nama5;
+    width: 200px;
+    margin-left: 0%; 
+}
+.nama6{
+    grid-area: nama5;
+    width: 200px;
+    margin-left: 0%; 
 }
 @media (max-width: 800px) {
     .container-support{
@@ -729,7 +773,15 @@ margin-left: 20%;
         grid-template-areas:"logo1"
                             "nama1"
                             "logo2"
-                            "nama2";
+                            "nama2"
+                            "logo3"
+                            "nama3"
+                            "logo4"
+                            "nama4"
+                            "logo5"
+                            "nama5"
+                            "logo6"
+                            "nama6";
         grid-template-rows:    0.2fr;
         grid-template-columns: 1fr;
         }
@@ -743,20 +795,58 @@ margin-left: 20%;
     }
     .logo1{
         width: 100px;
-        margin-left: 10%;
+        margin-top: 0%;
+        margin-left: 30%;
     }
     .logo2{
         padding-top: 5%;
+        margin-left: 12%;    
+    }
+    .logo3{
+        width: 100px;
+        margin-top: 5%;
+        margin-left: 30%;
+    }
+    .logo4{
+        padding-top: 5%;
+        margin-top: 0%;
         margin-left: 10%;    
+    }
+    .logo5{
+        width: 100px;
+        margin-top: 5%;
+        margin-left: 30%;
+    }
+    .logo6{
+        width: 100px;
+        margin-top: 5%;
+        margin-left: 30%;
     }
     .nama1{
         padding-top: 5%;
+        margin-top: 0%;
         margin-left: 10%;
     }
     .nama2{
         padding-top: 5%;
+        margin-top: 0%;
         margin-left: 10%;    
-}
+    }
+    .nama3{
+        padding-top: 5%;
+        margin-top: 0%;
+        margin-left: 10%;
+    }
+    .nama4{
+        padding-top: 5%;
+        margin-top: 1%;
+        margin-left: 10%;    
+    }
+    .nama5{
+        padding-top: 5%;
+        margin-top: 0%;
+        margin-left: 10%;
+    }
 }
 
 .struktur-content{
@@ -847,4 +937,76 @@ margin-left: 20%;
         width: 200px;
         margin-left: 25%;
     }
+}
+.icon-bar {
+    position: fixed;
+    top: 70%;
+    right: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 35px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  .instagram {
+    background: rgba(228, 64, 95);
+    color: white;
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out opacity;
+}
+.popup-content {
+    width: clamp(300px, 90vw, 500px);
+    background-color: #fff;
+    padding: clamp(1.5rem, 100vw, 3rem);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    border-radius: .5em;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 200ms ease-in-out opacity,
+                200ms ease-in-out transform;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.popup-content img {
+    width: 100%;
+    height: 100%;
+}
+.popup h1 {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+.popup h1:active {
+    transform: scale(.9);
+}
+
+.showPopup {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
 }
